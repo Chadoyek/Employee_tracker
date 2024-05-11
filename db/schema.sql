@@ -28,3 +28,4 @@ CREATE TABLE employee (
     ON DELETE SET NULL,
     manager_id INT REFERENCES employee(id)
 );
+

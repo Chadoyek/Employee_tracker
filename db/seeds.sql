@@ -1,26 +1,24 @@
 INSERT INTO department (name)
-VALUES ("Finances"),
+VALUES ("Sales"),
+       ("Finances"),
        ("Human Resources"),
        ("Marketing"),
+       ("Legal"),
        ("Customer Support"),
        ("Quality Assurance"),
-       ("Sales");
+       ("Training");
 
 INSERT INTO role (title, salary, department_id)
-VALUES  ("Sales Manager", 150000, 6),
-        ("Customer Support Associate", 80000, 4),
-        ("HR Specialist", 100000, 2),
-        ("Accountant", 120000, 1),
-        ("Marketing Specialist", 90000, 3),
-        ("QA Engineer", 110000, 5),
-        ("Sales Associate", 70000, 6),
-        ("Customer Support Manager", 130000, 4),
-        ("HR Manager", 140000, 2),
-        ("Chief Accountant", 180000, 1),
-        ("Marketing Manager", 120000, 4),
-        ("QA Team Lead", 160000, 7);
+VALUES  ("Sales Manager", 100000, 1),
+        ("Sales Representative", 50000, 1),
+        ("Finance Manager", 120000, 2),
+        ("Finance Analyst", 60000, 2),
+        ("HR Manager", 90000, 3),
+        ("HR Specialist", 45000, 3),
+        ("Marketing Manager", 110000, 4);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES  ("Paul", "Smith", 1, NULL),
+VALUES  ("Chadi", "Hoyek", 1, NULL),
         ("John", "Kennedy", 4, NULL),
-        ("Warren", "Buffet", 2, 1),
+        ("Lionel", "Messi", 2, 1),
+        ("Cristiano", "Ronaldo", 3, 3);
